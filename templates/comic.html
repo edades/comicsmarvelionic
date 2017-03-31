@@ -1,0 +1,15 @@
+<ion-view view-title="Comics Marvel">
+  <ion-header-bar class="bar-light bar-subheader">
+    <input id="txtSearch" type="text" placeholder="Busca tu comic..." ng-model="query">
+  </ion-header-bar>
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-avatar item-icon-right" ng-repeat="comic in comics" type="item-text-wrap" href="#/comics/{{comic.id}}">
+        <img ng-src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}">
+        <h2>{{comic.title}}</h2>
+        <p>Fecha venta: {{comic.dates[0].date | date}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,28 @@
+<ion-view view-title="{{comic.title}}">
+  <ion-content class="padding">
+
+    <div class="list card detalleComic">
+      <div class="item item-avatar">
+        <h2>{{comic.title}}</h2>
+        <p>Fecha venta: {{comic.dates[0].date | date}}</p>
+      </div>
+
+      <div class="item item-body">
+        <img ng-src="{{comic.thumbnail.path}}.{{comic.thumbnail.extension}}" style="width: 200px; height: 200px">
+        <p>
+          <h2>Descripción</h2>
+          {{comic.description}}
+        </p>
+        <p>
+          <h2>Personajes</h2>
+          <ul class="list card">
+            <li class="item" ng-repeat="per in comic.characters.items">
+              <h2>{{per.name}}</h2>
+            </li>
+          </ul>
+        </p>
+      </div>
+    </div>
+
+  </ion-content>
+</ion-view>

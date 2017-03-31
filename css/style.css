@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Exo|Shadows+Into+Light');
+*{
+	font-family: 'Shadows Into Light', cursive;
+}
+h1,h2,h3,h4,h5,h6,input,strong{
+	font-family: 'Exo', sans-serif;
+}
+/* Comic */
+#txtSearch{
+	width: 100%;
+}
+/* Fin Comic */
+
+/* Detalle Comic */
+.detalleComic .item-avatar{
+	padding-left: 16px;
+}
+.detalleComic .item-body img{
+	display:block;
+  margin:auto;
+}
+/* Fin detalle comic */
