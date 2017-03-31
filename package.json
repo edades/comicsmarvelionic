@@ -1,0 +1,8 @@
+{
+  "name": "comic",
+  "version": "1.1.1",
+  "description": "comic: An Ionic project",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
